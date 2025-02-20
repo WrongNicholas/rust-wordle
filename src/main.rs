@@ -44,8 +44,12 @@ async fn main() -> Result<(), Box<dyn Error>> {
         }
 
         if current_guess == allowed_guesses {
-            println!("{}", word);
             println!("{}", to_art("GAME OVER!".to_string(), "DEFAULT", 0, 0, 0,)?);
+            println!(
+                "{}",
+                to_art("THE WORD WAS...".to_string(), "DEFAULT", 0, 0, 0,)?
+            );
+            println!("{}", to_art(word.to_string(), "DEFAULT", 0, 0, 0,)?);
         }
     }
 
