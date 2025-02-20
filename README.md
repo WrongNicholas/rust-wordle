@@ -4,7 +4,7 @@ A simple Wordle clone written in Rust.
 
 # Prerequisites
 
-Make sure you have Rust installed.
+Make sure you have Cargo installed.
 
 # Installation & Running
 
